@@ -1,4 +1,3 @@
-
 const botao = document.getElementById("buscar");
 const input = document.getElementById("pokemon");
 const mensagem = document.getElementById("mensagem");

@@ -1,16 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Pokédex</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <main class="pokedex">
-        <h1>Pokédex</h1>
+
+        <div class="titulo">
+            <div class="icone-pokebola"></div>
+            <h1>Pokédex</h1>
+            <p>Encontre seu Pokémon favorito!</p>
+        </div>
 
         <div class="pesquisa">
             <input type="text" id="pokemon" placeholder="Nome ou número">
@@ -20,45 +28,100 @@
         <p id="mensagem"></p>
 
         <section class="card">
+
             <div class="cabecalho">
                 <h2 id="nome">Pikachu</h2>
                 <span id="numero">#025</span>
             </div>
 
             <div class="imagem-container">
-                <img id="imagem"
+                <img
+                    id="imagem"
                     src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
-                    alt="Pikachu">
+                    alt="Imagem do Pokémon">
             </div>
 
             <div class="informacoes">
-                <div class="linha">
-                    <strong>Tipo:</strong>
-                    <div id="tipos">Elétrico</div>
-                </div>
 
                 <div class="linha">
-                    <strong>Altura:</strong>
-                    <span id="altura">0.4 m</span>
+                    <strong>Tipo</strong>
+                    <div id="tipos">
+                        <span class="tipo electric">Elétrico</span>
+                    </div>
                 </div>
 
-                <div class="linha">
-                    <strong>Peso:</strong>
-                    <span id="peso">6.0 kg</span>
+                <div class="detalhes">
+
+                    <div class="detalhe">
+                        <span>Altura</span>
+                        <strong id="altura">0.4 m</strong>
+                    </div>
+
+                    <div class="detalhe">
+                        <span>Peso</span>
+                        <strong id="peso">6 kg</strong>
+                    </div>
+
                 </div>
+
             </div>
 
             <div class="status">
+
                 <h3>Estatísticas</h3>
 
-                <p>HP: <span id="hp">35</span></p>
-                <p>Ataque: <span id="ataque">55</span></p>
-                <p>Defesa: <span id="defesa">40</span></p>
-                <p>Velocidade: <span id="velocidade">90</span></p>
+                <div class="status-item">
+                    <div class="status-topo">
+                        <span>HP</span>
+                        <span id="hp">35</span>
+                    </div>
+                    <div class="barra">
+                        <div class="barra-preenchida" id="barra-hp" style="width: 35%"></div>
+                    </div>
+                </div>
+
+                <div class="status-item">
+                    <div class="status-topo">
+                        <span>Ataque</span>
+                        <span id="ataque">55</span>
+                    </div>
+                    <div class="barra">
+                        <div class="barra-preenchida" id="barra-ataque" style="width: 55%"></div>
+                    </div>
+                </div>
+
+                <div class="status-item">
+                    <div class="status-topo">
+                        <span>Defesa</span>
+                        <span id="defesa">40</span>
+                    </div>
+                    <div class="barra">
+                        <div class="barra-preenchida" id="barra-defesa" style="width: 40%"></div>
+                    </div>
+                </div>
+
+                <div class="status-item">
+                    <div class="status-topo">
+                        <span>Velocidade</span>
+                        <span id="velocidade">90</span>
+                    </div>
+                    <div class="barra">
+                        <div class="barra-preenchida" id="barra-velocidade" style="width: 90%"></div>
+                    </div>
+                </div>
+
             </div>
+
+            <footer>
+                <p>Pokédex criada para um projeto escolar.</p>
+            </footer>
+
         </section>
+
     </main>
 
     <script src="java.js"></script>
+
 </body>
 </html>
+
